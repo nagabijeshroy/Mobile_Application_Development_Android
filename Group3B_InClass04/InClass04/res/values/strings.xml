@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">InClass04</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tv_complexity">Select Complexity</string>
+    <string name="btn_thread">Generate Number Thread</string>
+    <string name="async_btn">Generate Number Async Task</string>
+    <string name="text_value_number">Times</string>
+    <string name="progress_title">Retrieving the number</string>
+    <string name="error_title">Seekbar value cannot be 0</string>
+
+</resources>

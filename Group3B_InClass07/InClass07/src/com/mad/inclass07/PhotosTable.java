@@ -1,0 +1,31 @@
+package com.mad.inclass07;
+
+import android.database.SQLException;
+import android.database.sqlite.SQLiteDatabase;
+
+public class PhotosTable {
+	static final String TABLENAME = "photos";
+	static final String COLUMN_ID = "_id";
+	static final String COLUMN_PHOTO_NAME = "photo_name";
+	static final String COLUMN_PHOTO_URL = "photo_url";
+	static final String COLUMN_OWNER_NAME = "owner_name";
+
+	static public void onCreate(SQLiteDatabase db){
+		StringBuilder sb = new StringBuilder();
+		sb.append("CREATE TABLE " + TABLENAME + "(");
+		sb.append(COLUMN_ID + " integer primary key,");
+		sb.append(COLUMN_PHOTO_NAME + " text not null,");
+		sb.append(COLUMN_PHOTO_URL + " text not null,");
+		sb.append(COLUMN_OWNER_NAME+ " text not null");
+		sb.append(");");	 	 	
+		try{
+			db.execSQL(sb.toString());
+		} catch (SQLException e){	 	 	 	 	
+			e.printStackTrace();
+		}
+	}
+	static public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){
+		db.execSQL("DROP TABLE IF EXISTS " + TABLENAME);
+		PhotosTable.onCreate(db);
+	}
+}

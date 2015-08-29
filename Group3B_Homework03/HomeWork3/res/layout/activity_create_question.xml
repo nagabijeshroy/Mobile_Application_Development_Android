@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/create_et_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/create_tv_title"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="@string/create_et_hint_q" >
+
+        <requestFocus />
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/create_rg_ans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/create_et_imgurl"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/create_iv_addnew" >
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/create_et_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/create_tv_title"
+        android:layout_below="@+id/create_et_question"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:hint="@string/create_et_hint_opt" />
+
+    <ImageView
+        android:id="@+id/create_iv_addnew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/create_et_option"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/create_et_option"
+        android:layout_toRightOf="@+id/create_et_option"
+        android:src="@drawable/ic_action_new" />
+
+    <EditText
+        android:id="@+id/create_et_imgurl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/create_b_submit"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:hint="@string/create_et_imgurl" />
+
+    <Button
+        android:id="@+id/create_b_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:text="@string/create_b_submit" />
+
+    <TextView
+        android:id="@+id/create_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:text="@string/create_tv_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

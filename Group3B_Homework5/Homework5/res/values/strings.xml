@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Homework05</string>
+    <string name="title_activity_preview">PreviewActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_add">Add</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="title_activity_to_do">ToDoActivity</string>
+    <string name="name">First Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="login">Login</string>
+    <string name="signup">Sign Up</string>
+    <string name="cancel">Cancel</string>
+    <string name="new_account">Create New Account</string>
+    <string name="view_all">View All</string>
+    <string name="view_favorites">View Favorites</string>
+    <string name="clear_favorites">Clear Favorites</string>
+    <string name="view_shared">View Shared</string>
+    <string name="clear_shared">Clear Shared</string>
+    <string name="app_list_btn">App List</string>
+    <string name="history_btn">History</string>
+    <string name="no_apps">No Applications</string>
+    <string name="shared_clear">Shared Applications Cleared</string>
+    <string name="favorites_clear">Favorite Applications Cleared</string>
+    <string name="no_shared">No Shared Applications found</string>
+    <string name="no_favorites">No favorite Applications found</string>
+    <string name="no_url">No web Url</string>
+    <string name="loading_application">Loading Applications</string>
+    <string name="last_name">Last Name</string>
+    <string name="users">Users</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+
+</resources>

@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/left"
+    android:paddingLeft="@dimen/left"
+    android:paddingRight="@dimen/left"
+    android:paddingTop="@dimen/left"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/tv_qnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="19dp"
+        android:text="@string/trivia_tv_qnum"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/trivia_tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_qnum"
+        android:layout_alignBottom="@+id/tv_qnum"
+        android:layout_alignParentRight="true"
+        android:text="@string/trivia_tv_timer"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/trivia_b_quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/trivia_b_Quit" 
+        />
+
+    <Button
+        android:id="@+id/trivia_b_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="@string/trivia_b_next"
+        android:onClick="NextQuestion" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_above="@+id/trivia_b_quit"
+        android:layout_alignEnd="@+id/trivia_iv_qimg"
+        android:layout_alignRight="@+id/trivia_iv_qimg" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="386dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/trivia_tv_ques"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:height="@dimen/left"
+                android:text="@string/trivia_tv_ques"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RadioGroup
+                android:id="@+id/trivia_rg_answers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/trivia_iv_qimg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/scrollView1"
+        android:layout_alignLeft="@+id/tv_qnum"
+        android:layout_below="@+id/tv_qnum"
+        android:layout_marginTop="41dp"
+        android:src="@drawable/no_image" />
+
+    <TextView
+        android:id="@+id/trivia_tv_imgprogress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/trivia_iv_qimg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:text="@string/trivia_tv_imgprogress"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/progressBarImg"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_qnum"
+        android:indeterminateBehavior="cycle"
+        android:visibility="invisible" />
+
+</RelativeLayout>

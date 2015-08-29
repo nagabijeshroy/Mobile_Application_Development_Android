@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/hintName" >
+
+        <requestFocus />
+    </EditText>
+
+    <Switch
+        android:id="@+id/switchSearchable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/radioGroupPL"
+        android:text="@string/tv_acc_sear" />
+
+    <TextView
+        android:id="@+id/textViewMood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/switchSearchable"
+        android:layout_marginTop="10dp"
+        android:text="@string/tv_mood" />
+
+    <SeekBar
+        android:id="@+id/seekBarMood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewMood"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/textViewPL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroupPL"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="35dp"
+        android:text="@string/tv_pl"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewPL"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:hint="@string/hintEmail"
+        android:inputType="textEmailAddress" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+
+        <RadioButton
+            android:id="@+id/radioJava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/radio_btn_Java" />
+
+        <RadioButton
+            android:id="@+id/radioC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_btn_C" />
+
+        <RadioButton
+            android:id="@+id/radioCs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Radio_btn_Cs" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/seekBarMood"
+        android:text="@string/btnSubmit" />
+
+</RelativeLayout>

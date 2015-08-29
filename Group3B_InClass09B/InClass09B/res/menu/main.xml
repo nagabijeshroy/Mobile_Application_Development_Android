@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.inclass08.MainActivity" >
+
+    <item
+        android:id="@+id/showplaces"
+        android:orderInCategory="99"
+        android:showAsAction="never"
+        android:title="@string/showplaces"/>
+
+</menu>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">InClass</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="EuroBtn">Euro (EUR)</string>
+    <string name="CandBtn">Canadian Dollar (CAD)</string>
+    <string name="BritPBtn">British Pound (GBP)</string>
+    <string name="JapYBtn">Japanese Yen (JPY)</string>
+    <string name="ClrBtn">Clear All</string>
+    <string name="Result">Result:</string>
+    <string name="Amount">Amount (USD)</string>
+
+</resources>

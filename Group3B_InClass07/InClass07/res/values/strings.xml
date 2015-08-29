@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">InClass07</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="submitText">Submit</string>
+    <string name="noText">Search cannot be empty</string>
+    <string name="loading">Loading Results</string>
+    <string name="MainActivity">Main Activity</string>
+    <string name="GalleryActivity">Gallery Activity</string>
+    <string name="DetailActivity">Details Activity</string>
+    <string name="title_activity_gallery">GalleryActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_details">DetailsActivity</string>
+
+</resources>

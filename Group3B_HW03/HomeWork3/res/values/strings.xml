@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HomeWork3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="main_tv_Welcome">Welcome to Trivia App</string>
+    <string name="main_b_Start">Start Trivia</string>
+    <string name="main_b_exit">Exit</string>
+    <string name="main_b_delete">Delete All My Questions</string>
+    <string name="main_b_create">Create Quiz Question</string>
+    <string name="title_activity_trivia">Trivia Activity</string>
+    <string name="trivia_tv_qnum">Q</string>
+    <string name="trivia_tv_timer">Time Left: X seconds</string>
+    <string name="trivia_tv_ques">Question text</string>
+    <string name="trivia_b_Quit">Quit</string>
+    <string name="trivia_b_next">Next</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="result_tv_title">Trivia Results</string>
+    <string name="result_tv_correctA">Correct Answers</string>
+    <string name="result_tv_percentage"># %</string>
+    <string name="result_tv_comment">Try again and see if you can get all the correct answers!</string>
+    <string name="result_b_quit">Quit</string>
+    <string name="result_b_tryagain">Try Again</string>
+    <string name="title_activity_create_question">Create Question Activity</string>
+    <string name="create_et_hint_q">Type question here</string>
+    <string name="create_tv_title">Create A New Question</string>
+    <string name="create_et_hint_opt">Type option here</string>
+    <string name="create_et_imgurl">Paste image URL here (optional)</string>
+    <string name="create_b_submit">Submit</string>
+    <string name="main_del_alert_title">Delete Questions</string>
+    <string name="main_del_alert_msg">Are you sure you want to delete all your questions?</string>
+    <string name="main_del_alert_positive">Yes</string>
+    <string name="main_del_alert_negative">No</string>
+    <string name="trivia_title">Trivia Activity</string>
+    <string name="trivia_tv_imgprogress">Loading Image</string>
+
+</resources>

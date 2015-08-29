@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">InClass</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Convert">convertBtn</string>
+    <string name="convertBtn">Convert</string>
+    <string name="textView">1 USD = 0.84 USD</string>
+    <string name="textField">1</string>
+
+</resources>

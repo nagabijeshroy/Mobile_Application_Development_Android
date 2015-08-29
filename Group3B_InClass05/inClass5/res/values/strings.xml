@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">inClass5</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="main_btn_go">Go</string>
+    <string name="main_tv_hint">Search keyword</string>
+
+</resources>

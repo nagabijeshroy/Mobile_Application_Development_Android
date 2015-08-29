@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.to_dolist.CreateTask" >
+
+    <EditText
+        android:id="@+id/editTextTitleCT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/title_hint" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editTextDateCT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextTitleCT"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/date_hint"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/editTextTimeCT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editTextDateCT"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/time_hint"
+        android:inputType="time" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPriorityCT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewRadioTitle"
+        android:layout_centerVertical="true" >
+
+        <RadioButton
+            android:id="@+id/radioHigh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/radio_high" />
+
+        <RadioButton
+            android:id="@+id/radioMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_medium" />
+
+        <RadioButton
+            android:id="@+id/radioLow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_low" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewRadioTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroupPriorityCT"
+        android:layout_alignLeft="@+id/editTextTimeCT"
+        android:text="@string/priority_head" />
+
+    <Button
+        android:id="@+id/buttonSaveCT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button_save" />
+
+</RelativeLayout>
